@@ -6,7 +6,7 @@ keywords:
   - chip-seq
   - peak-calling
 tools:
-  - macs2:
+  - macs3:
       description: Model Based Analysis for ChIP-Seq data
 homepage: "https://macs3-project.github.io/MACS/"
       documentation: "https://macs3-project.github.io/MACS/"
