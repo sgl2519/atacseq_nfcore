@@ -225,7 +225,7 @@ workflow PREPARE_GENOME {
     }
 
     //
-    // Estimate MACS2 genome size
+    // Estimate MACS3 genome size
     //
     ch_macs_gsize = params.macs_gsize
     if (!params.macs_gsize) {
@@ -250,7 +250,7 @@ workflow PREPARE_GENOME {
     chromap_index = ch_chromap_index              //    path: genome.index
     star_index    = ch_star_index                 //    path: star/index/
     autosomes     = ch_genome_autosomes           //    path: *.autosomes.txt
-    macs_gsize    = ch_macs_gsize                 // integer: MACS2 genome size
+    macs_gsize    = ch_macs_gsize                 // integer: MACS3 genome size
 
     versions      = ch_versions.ifEmpty(null)     // channel: [ versions.yml ]
 }
